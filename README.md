@@ -16,3 +16,15 @@ ls .git/logs
 
 cat .git/logs/HEAD
 Change from Remote
+
+git bisect start
+git bisect bad
+git bisect good 845ar357
+
+git bisect good or bad
+
+git revert 845ar357
+
+git reset --hard
+
+git reset --soft head~1
