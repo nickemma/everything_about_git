@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+<style>
+    :root {
+        --primary-white: #ffffff;
+        --gray-2: #d9d9d9;
+        --text-color: #333;
+        --hover-background: #e4a1a1;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f8f9fa;
+        overflow: hidden;
+    }
+
+    .wf_heroscene {
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .wf_int-hero_center {
+        z-index: 10;
+    }
+
+    .wf_int-hero_heading {
+        font-size: 3rem;
+        font-weight: bold;
+        color: var(--text-color);
+        text-transform: capitalize;
+    }
+
+    .wf_int-hero_logo {
+        width: 80px;
+        margin-bottom: 20px;
+    }
+
+    .wf_int-hero_tag {
+        position: absolute;
+        padding: 10px 20px;
+        background-color: var(--primary-white);
+        border: 1px solid var(--gray-2);
+        border-radius: 8px;
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 0.9rem;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: background-color 300ms ease, transform 300ms ease;
+        /* Smooth transition for background and transform */
+    }
+
+    .wf_int-hero_tag:hover {
+        background-color: var(--hover-background);
+        color: var(--text-color);
+    }
+
+    /* Positioning Floating Tags */
+    .wf_int-hero_tag:nth-child(2) {
+        top: 20%;
+        left: 70%;
+    }
+
+    .wf_int-hero_tag:nth-child(3) {
+        top: 40%;
+        left: 30%;
+    }
+
+    .wf_int-hero_tag:nth-child(4) {
+        bottom: 20%;
+        left: 50%;
+    }
+
+    .wf_int-hero_tag:nth-child(5) {
+        top: 10%;
+        left: 10%;
+    }
+
+    .wf_int-hero_tag:nth-child(6) {
+        bottom: 30%;
+        right: 20%;
+    }
+
+    .wf_int-hero_tag:nth-child(7) {
+        top: 50%;
+        right: 10%;
+    }
+
+    .wf_int-hero_tag:nth-child(8) {
+        bottom: 10%;
+        left: 70%;
+    }
+
+    .wf_int-hero_tag:nth-child(9) {
+        top: 30%;
+        left: 40%;
+    }
+
+    .wf_int-hero_tag:nth-child(10) {
+        bottom: 50%;
+        right: 30%;
+    }
+
+    .wf_int-hero_tag:nth-child(11) {
+        top: 15%;
+        right: 15%;
+    }
+
+    .wf_int-hero_tag:nth-child(12) {
+        bottom: 15%;
+        left: 15%;
+    }
+
+    .wf_int-hero_tag:nth-child(13) {
+        top: 5%;
+        left: 50%;
+    }
+
+    .wf_int-hero_tag:nth-child(14) {
+        bottom: 40%;
+        left: 25%;
+    }
+
+    .wf_int-hero_tag:nth-child(15) {
+        top: 45%;
+        right: 45%;
+    }
+</style>
+
+</head>
+
+<body>
+    <div class="wf_heroscene">
+        <!-- Central Content -->
+        <div class="wf_int-hero_center">
+            <img src="https://cdn.prod.website-files.com/64626a4a74818ca87606a29e/646d8a8dcdde62af588fb406_Group%20116.svg"
+                alt="Logo" class="wf_int-hero_logo">
+            <div class="wf_int-hero_heading">Find what's next</div>
+        </div>
+
+        <!-- Floating Tags -->
+        <a href="https://wellfound.com/hire/full-stack-developers" class="wf_int-hero_tag">Full Stack Developers</a>
+        <a href="https://wellfound.com/hire/front-end-developers" class="wf_int-hero_tag">Front End Developers</a>
+        <a href="https://wellfound.com/hire/ios-developers" class="wf_int-hero_tag">iOS Developers</a>
+        <a href="https://wellfound.com/hire/android-developers" class="wf_int-hero_tag">Android Developers</a>
+        <a href="https://wellfound.com/hire/backend-developers" class="wf_int-hero_tag">Backend Developers</a>
+        <a href="https://wellfound.com/hire/ui-ux-designers" class="wf_int-hero_tag">UI/UX Designers</a>
+        <a href="https://wellfound.com/hire/data-scientists" class="wf_int-hero_tag">Data Scientists</a>
+        <a href="https://wellfound.com/hire/machine-learning-engineers" class="wf_int-hero_tag">Machine Learning
+            Engineers</a>
+        <a href="https://wellfound.com/hire/devops-engineers" class="wf_int-hero_tag">DevOps Engineers</a>
+        <a href="https://wellfound.com/hire/cloud-engineers" class="wf_int-hero_tag">Cloud Engineers</a>
+        <a href="https://wellfound.com/hire/security-engineers" class="wf_int-hero_tag">Security Engineers</a>
+        <a href="https://wellfound.com/hire/software-engineers" class="wf_int-hero_tag">Software Engineers</a>
+        <a href="https://wellfound.com/hire/qa-engineers" class="wf_int-hero_tag">QA Engineers</a>
+        <a href="https://wellfound.com/hire/blockchain-developers" class="wf_int-hero_tag">Blockchain Developers</a>
+        <a href="https://wellfound.com/hire/ar-vr-developers" class="wf_int-hero_tag">AR/VR Developers</a>
+    </div>
+
+    <script>
+        const tags = document.querySelectorAll('.wf_int-hero_tag');
+
+        document.addEventListener('mousemove', (e) => {
+            const x = e.clientX / window.innerWidth - 0.5; // Normalize X (from -0.5 to 0.5)
+            const y = e.clientY / window.innerHeight - 0.5; // Normalize Y (from -0.5 to 0.5)
+
+            tags.forEach((tag, index) => {
+                const speed = (index + 1) / 10; // Assign incremental speed for each tag
+                const translateX = x * 100 * speed; // Scale the movement
+                const translateY = y * 100 * speed;
+
+                // Get current scale on hover
+                const scale = tag.classList.contains('hover') ? 1.2 : 1; // Check if hovered
+
+                // Apply combined scale and translation transformations
+                tag.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+            });
+        });
+
+        // Add mouse enter and leave events to handle hover state
+        tags.forEach(tag => {
+            tag.addEventListener('mouseenter', () => {
+                tag.classList.add('hover'); // Add hover class on mouse enter
+            });
+
+            tag.addEventListener('mouseleave', () => {
+                tag.classList.remove('hover'); // Remove hover class on mouse leave
+            });
+        });
+    </script>
+</body>
+
+</html>
